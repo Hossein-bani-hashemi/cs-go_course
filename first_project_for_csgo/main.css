@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "iran_sans";
+    src: url("assets/fonts/FontsFree-Net-ir_sans.ttf")foramt("truetype");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "iran_sans";
+}
+body,html{
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_box1{
+    width: 80%;
+    height: 220px;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_sentence{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.header_button{
+    background-color: lightgrey;
+    color: black;
+    font-size: 20px;
+    width: 175px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.form{
+    width: 30%;
+    height: 220px;
+    background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    padding: 5px 0px;
+    margin-top: 10px;
+    width: 90%;
+    height: 35px;
+    border: 1px solid lightgrey;
+}
+
+.form_btn{
+    width: 90%;
+    height: 35px;
+    background-color: darkblue;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.input::placeholder{
+    text-align: center;
+    font-size: 15px;
+}
+
+.form_remember{
+    text-decoration: none;
+    margin-top: 30px;
+    color: white;
+}
+
+.weblog_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+hr{
+    width: 100%;
+}
+
+.weblog_matn{
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.div_cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card{
+    width: 300px;
+    height: 180px;
+    direction: rtl;
+    background-color: lightgrey;
+    margin: 1px;
+    padding: 10px;
+}
+
+.card_p1{
+    color: blue;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.card_a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.card_p2{
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+}
+
+@media screen and (max-width:600px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header img{
+        display: none;
+    }
+
+    .header_box1{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .header_sentence{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .header_button{
+        margin-bottom: 10px;
+        width:100px;
+        height: 15px;
+        font-size: 15px;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form_remember{
+        padding-bottom: 15px;
+    }
+
+    .weblog_title{
+        margin-top: 70px;
+    }
+    
+}
